@@ -21,11 +21,14 @@
 <body>
   <!-- ✅ HEADER (Sticky) -->
   <header class="header sticky">
-    <div class="container header-inner">
+    <div class="container">
+	 <div class="header-inner">
+	  <!-- Logo -->
       <a href="index.html" class="logo">
-        <img src="https://lh3.googleusercontent.com/d/1xp5ce29F3f-nVa_IEx925L-8YrXXbHo6" alt="Herbaprima Logo" />
+        <img src="https://lh3.googleusercontent.com/d/1xp5ce29F3f-nVa_IEx925L-8YrXXbHo6" alt="Herbaprima Logo" class="logo-img">
       <span class="site-title">Herbaprima</span>
       </a>
+	  <!-- Navigation -->
       <nav class="nav-menu" id="navMenu">
         <ul>
           <li><a href="index.html">Beranda</a></li>
@@ -36,11 +39,18 @@
         </ul>
       </nav>
 
+		<!-- ✅ IKON KERANJANG (Kecil, Kanan Atas) -->
+		<button class="cart-icon-btn" id="cartIconBtn" aria-label="Buka keranjang">
+			<i class="fas fa-shopping-cart"></i>
+			<span class="cart-badge" id="cartBadge">0</span>
+		</button>
+
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span>
         <span></span>
         <span></span>
       </button>
+	 </div>
     </div>
   </header>
 
