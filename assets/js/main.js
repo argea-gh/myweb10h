@@ -213,7 +213,7 @@ function loadCart() {
 const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
 document.getElementById('cartBadge').textContent = totalCount || '';
 document.getElementById('cartBadge').style.display = totalCount > 0 ? 'flex' : 'none';
-End of Tambahan
+// End of Tambahan
 }
 
 function saveCart(cart) {
