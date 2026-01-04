@@ -200,13 +200,12 @@ function loadCart() {
   updateCartDisplay(cart);
   return cart;
   // Di akhir fungsi loadCart():
-// const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
-// const badge = document.getElementById('cartBadge');
-// if (badge) {
-  // badge.textContent = totalCount;
-  // badge.classList.toggle('show', totalCount > 0);
-// }
-// }
+const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+const badge = document.getElementById('cartBadge');
+if (badge) {
+  badge.textContent = totalCount;
+  badge.classList.toggle('show', totalCount > 0);
+}
 
 // Tambahan
 // Update badge jumlah item
