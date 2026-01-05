@@ -1271,6 +1271,19 @@ body {
 }
 
 /* ────────── Tambahan ────────────────── */
+/* ──────  Cart aksess styling ikom ───── */
+.cart-icon-btn {
+  position: relative;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--gray-700);
+}
+
+.cart-icon-btn:hover {
+  color: var(--green-primary);
+}
+
+/* ────────── Tambahan ────────────────── */
 /* CART ACCESS BUTTON (Floating Keranjang) */
 /* ─────────────────────────────────────── */
 
