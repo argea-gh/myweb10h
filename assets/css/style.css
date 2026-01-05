@@ -1270,6 +1270,35 @@ body {
   font-weight: 600;
 }
 
+/* ───── Tambahan dw dari web5 ───── */
+.cart-icon {
+  position: relative;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--gray-700);
+}
+
+.cart-icon:hover {
+  color: var(--green-primary);
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: var(--green-primary);
+  color: white;
+  font-size: 0.75rem;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+/* ───── End of ───── */
+
+
 /* ────────── Tambahan ────────────────── */
 /* ──────  Cart aksess styling ikom ───── */
 .cart-icon-btn {
