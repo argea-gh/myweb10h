@@ -199,24 +199,7 @@ function loadCart() {
   const cart = JSON.parse(localStorage.getItem('herbaprimaCart') || '[]');
   updateCartDisplay(cart);
   return cart;
-// }
-
-// Di akhir fungsi loadCart():
-const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
-const badge = document.getElementById('cartBadge');
-if (badge) {
-  badge.textContent = totalCount;
-  badge.classList.toggle('show', totalCount > 0);
-  }
-  
-  
-// Tambahan
-// Update badge jumlah item
-const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
-document.getElementById('cartBadge').textContent = totalCount || '';
-document.getElementById('cartBadge').style.display = totalCount > 0 ? 'flex' : 'none';
-// End of Tambahan
- }
+}
 
 function saveCart(cart) {
   localStorage.setItem('herbaprimaCart', JSON.stringify(cart));
@@ -308,6 +291,14 @@ function updateCartDisplay(cart) {
   // Update total
   const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
   cartTotal.textContent = formatRupiah(total);
+
+  // ✅ UPDATE BADGE DI SINI — SETIAP KALI KERANJANG BERUBAH
+  const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+  const badge = document.getElementById('cartBadge');
+  if (badge) {
+    badge.textContent = totalCount;
+    badge.classList.toggle('show', totalCount > 0);
+  }
 
   // Update checkout button
   if (cart.length > 0) {
